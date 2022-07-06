@@ -12,7 +12,7 @@ pg.init()
 screen = pg.display.set_mode((800, 600))
 pg.display.set_caption("new game")
 
-icon = pg.image.load("D:\python_codes\python_games\gamepad.png")
+icon = pg.image.load("gamepad.png")
 
 pg.display.set_icon(icon)
 
@@ -21,7 +21,7 @@ pg.display.set_icon(icon)
 
 class player(pg.sprite.Sprite):
 
-    player_image = pg.image.load("D:\python_codes\python_games\spaceship1.png")
+    player_image = pg.image.load("spaceship1.png")
     player_x = 350
     player_y = 480
 
@@ -33,7 +33,7 @@ class player(pg.sprite.Sprite):
 
 class enemy(pg.sprite.Sprite):
 
-    enemy1_icon = pg.image.load("D:\\python_codes\\python_games\\alien1.png")
+    enemy1_icon = pg.image.load("alien1.png")
     e_pos_x = random.randint(0, 745)
     enemy1_x = e_pos_x
     enemy1_y = 20
@@ -44,7 +44,7 @@ class enemy(pg.sprite.Sprite):
 # Game over
 
 
-game_over_image = pg.image.load("D:\\python_codes\\python_games\\game-over.png")
+game_over_image = pg.image.load("game-over.png")
 
 def game_over_display():
     screen.blit(game_over_image, (150, 75))
